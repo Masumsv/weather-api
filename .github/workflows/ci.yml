@@ -6,7 +6,6 @@ on:
 jobs:
     test:
         runs-on: ubuntu-latest
-
         steps:
             - name: Say hello
-            run: echo "CI is working!"
+              run: echo "CI is working!"
