@@ -24,5 +24,8 @@ jobs:
             - name:  Check Python syntax
               run: python -m py_compile api/app/main.py
 
+            - name: Run tests
+              run: python -m pytest api/app/test_main.py
+              
             - name: Say hello
               run: echo "CI is working!"
