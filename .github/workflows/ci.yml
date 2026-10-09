@@ -17,9 +17,12 @@ jobs:
 
             - name: Install dependencies
               run: pip install -r api/requirements.txt
+
+            - name: Check imports
+              run: python -c "import fastapi; import requests; import psycopg2"
                   
             - name:  Check Python syntax
               run: python -m py_compile api/app/main.py
-              
+
             - name: Say hello
               run: echo "CI is working!"
